@@ -14,14 +14,17 @@ width:220px;
 }
 
 .hero{
-margin:20px;
-padding:20px;
-border-radius:25px;
-background:linear-gradient(
-135deg,
-#6C63FF,
-#9B5DE5
-);
+    margin:20px;
+    padding:0;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.hero-img{
+    width:100%;
+    display:block;
+    border-radius:30px;
+}
 
 color:white;
 text-align:center;
