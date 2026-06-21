@@ -2,58 +2,201 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Suryatokoku Apps</title>
 
-<link rel="stylesheet" href="style.css">
-</head>
+<style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f7f8ff;
+}
+
+/* HEADER */
+
+.header{
+    display:flex;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+.brand{
+    margin-left:12px;
+}
+
+.brand h2{
+    font-size:24px;
+    font-weight:800;
+
+    background:linear-gradient(
+        90deg,
+        #ff4fa3,
+        #7b61ff
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* SLOGAN */
+
+.hero{
+    padding:0 20px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.hero-img{
+    width:100%;
+    max-width:350px;
+    height:auto;
+    display:inline-block;
+}
+
+/* MENU */
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    padding:0 20px 25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:25px;
+    padding:20px;
+    text-align:center;
+    text-decoration:none;
+    color:#222;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+
+    transition:.2s;
+}
+
+.card:active{
+    transform:scale(.95);
+}
+
+.icon{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    font-size:14px;
+    line-height:1.4;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    font-size:12px;
+    color:#999;
+    padding-bottom:25px;
+}
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+    .logo{
+        width:50px;
+        height:50px;
+    }
+
+    .brand h2{
+        font-size:22px;
+    }
+
+    .icon{
+        font-size:32px;
+    }
+
+    .card h3{
+        font-size:13px;
+    }
+
+}
+
+</style>
+
+</head>
 <body>
 
+<!-- HEADER -->
+
 <div class="header">
+
     <img src="Logo Surtok 3D.png" class="logo">
 
     <div class="brand">
         <h2>Suryatokoku</h2>
     </div>
+
 </div>
+
+<!-- SLOGAN -->
 
 <div class="hero">
     <img src="Slogan.png" class="hero-img">
 </div>
 
+<!-- MENU -->
+
 <div class="grid">
 
-<a href="cek-harga/" class="card">
-🔍
-<h3>Cek Harga</h3>
-</a>
+    <a href="cek-harga/" class="card">
+        <div class="icon">🔍</div>
+        <h3>Cek Harga</h3>
+    </a>
 
-<a href="pricetag/" class="card">
-🖨️
-<h3>Cetak Pricetag</h3>
-</a>
+    <a href="pricetag/" class="card">
+        <div class="icon">🖨️</div>
+        <h3>Cetak Pricetag</h3>
+    </a>
 
-<a href="bundling/" class="card">
-🏷️
-<h3>Cetak Harga Bundling</h3>
-</a>
+    <a href="bundling/" class="card">
+        <div class="icon">🏷️</div>
+        <h3>Cetak Harga Bundling</h3>
+    </a>
 
-<a href="harga-turun/" class="card">
-📉
-<h3>Cetak Harga Turun</h3>
-</a>
+    <a href="harga-turun/" class="card">
+        <div class="icon">📉</div>
+        <h3>Cetak Harga Turun</h3>
+    </a>
 
-<a href="https://suryatokoku.my.id/Req-PO/" class="card">
-📦
-<h3>Request PO</h3>
-</a>
+    <a href="https://suryatokoku.my.id/Req-PO/" class="card">
+        <div class="icon">📦</div>
+        <h3>Request PO</h3>
+    </a>
 
-<a href="https://suryatokoku.my.id/SO/" class="card">
-📋
-<h3>Stock Opname</h3>
-</a>
+    <a href="https://suryatokoku.my.id/SO/" class="card">
+        <div class="icon">📋</div>
+        <h3>Stock Opname</h3>
+    </a>
 
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+    © Suryatokoku Apps
 </div>
 
 </body>
