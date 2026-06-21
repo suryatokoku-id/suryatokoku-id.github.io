@@ -135,13 +135,38 @@ body{
 
 }
 
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    padding:0 20px 20px;
+}
+
 .menu-btn{
-    display:block;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:white;
+
+    height:130px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+
+    transition:.2s;
+}
+
+.menu-btn:active{
+    transform:scale(.96);
 }
 
 .menu-img{
-    width:100%;
-    display:block;
+    max-width:85%;
+    max-height:85%;
+    object-fit:contain;
 }
     
 </style>
